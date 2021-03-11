@@ -25,3 +25,18 @@ env:- contains credentials for MySQL and PostgreSQL databases
 $ export FLASK_APP=controller.py
 $ flask run
 ```
+
+## env file contents
+
+```bash
+mysql_db = 'user'
+mysql_username = 'root'
+mysql_password = 'mysqlpwd'
+mysql_port = '3306'
+
+
+postgresql_db = 'library'
+postgresql_username = 'root'
+postgresql_password = 'postgrespwd'
+postgresql_port = '5432'
+```
