@@ -37,7 +37,7 @@ postgresqlSession = sessionmaker(bind=postgresql_engine)
 book = Book(title='Rich Dad Poor Dad', author='Robert T. Kiyosaki',
             year='2017')
 postgresqlSession = postgresqlSession()
-postgresqlSession.add(book)  # adding value in mysql table
+postgresqlSession.add(book)  # adding value in postgres table
 postgresqlSession.commit()
 
 # API to fetch MySQL db data
